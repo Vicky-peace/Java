@@ -96,33 +96,109 @@
 // }
 
 // ================Switch statements================
-public class Main {
-    public static void main(String[] args) {
-        int day = 3;
-        switch (day) {
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-                break;
-            default:
-                System.out.println("Invalid day");
-        }
-    }
-}
+// public class Main {
+// public static void main(String[] args) {
+// int day = 3;
+// switch (day) {
+// case 1:
+// System.out.println("Monday");
+// break;
+// case 2:
+// System.out.println("Tuesday");
+// break;
+// case 3:
+// System.out.println("Wednesday");
+// break;
+// case 4:
+// System.out.println("Thursday");
+// break;
+// case 5:
+// System.out.println("Friday");
+// break;
+// case 6:
+// System.out.println("Saturday");
+// break;
+// case 7:
+// System.out.println("Sunday");
+// break;
+// default:
+// System.out.println("Invalid day");
+// }
+// }
+// }
+
+// ================Loops================
+// public class Main {
+// public static void main(String[] args) {
+// // For loop
+// for (int i = 0; i <= 5; i++) {
+// System.out.println("For loop iteration: " + i);
+// }
+
+// // While loop
+// int j = 1;
+// while (j <= 5) {
+// System.out.println("While loop iteration: " + j);
+// j++;
+// }
+
+// // Do-While loop
+// int k = 1;
+// do {
+// System.out.println("Do-While loop iteration: " + k);
+// k++;
+// } while (k <= 5);
+// }
+// }
+
+// public class Main {
+// public static void main(String[] args) {
+// int x = 20;
+
+// if (x > 10 && x <= 20) {
+// System.out.println("Hello");
+// }
+// }
+// }
+
+// public class Main {
+// public static void main(String[] args) {
+// int doorCode = 1337;
+
+// if (doorCode == 1333) {
+// System.out.println("Correct door code! You may enter.");
+// } else {
+// System.out.println("Incorrect door code! Access denied.");
+// }
+// }
+// }
+
+// ================For Loop================
+// This code demonstrates a simple for loop that prints numbers from 0 to 4.
+// public class Main {
+// public static void main(String[] args) {
+
+// for (int i = 0; i < 5; i++) {
+// System.out.println(i);
+// }
+// }
+// }
+
+// public class Main {
+// public static void main(String[] args) {
+// // This example prints even values between 0 and 10:
+// for (int i = 0; i <= 10; i = i + 2) {
+// System.out.println(i);
+// }
+// }
+// }
+
+// public class Main {
+// public static void main(String[] args) {
+// // This example prints a countdown from 5 to 1:
+// for (int i = 5; i > 0; i--) {
+// System.out.println(i);
+// }
+// System.out.println("Liftoff!");
+// }
+// }
