@@ -58,7 +58,6 @@
 
 // ================Numbers================> bit , short , long , float
 // ----- type casting => converting one data type to another data type
-package fundamentals;
 
 // public class Main {
 //     public static void main(String[] args) {
@@ -74,24 +73,56 @@ package fundamentals;
 // }
 
 // ================If else statements================
+// public class Main {
+//     public static void main(String[] args) {
+//         int age = 20;
+//         if (age >= 18) {
+//             System.out.println("Youre eligible to vote");
+//         } else {
+//             System.out.println("Youre not eligible to vote");
+//         }
+
+//         // Nested if else statements
+//         if (age >= 18) {
+//             if (age < 21) {
+//                 System.out.println("You can vote but cannot drink alcohol");
+//             } else {
+//                 System.out.println("You can vote and drink alcohol");
+//             }
+//         } else {
+//             System.out.println("You are too young to votte and drink alcohol");
+//         }
+//     }
+// }
+
+// ================Switch statements================
 public class Main {
     public static void main(String[] args) {
-        int age = 20;
-        if (age >= 18) {
-            System.out.println("Youre eligible to vote");
-        } else {
-            System.out.println("Youre not eligible to vote");
-        }
-
-        // Nested if else statements
-        if (age >= 18) {
-            if (age < 21) {
-                System.out.println("You can vote but cannot drink alcohol");
-            } else {
-                System.out.println("You can vote and drink alcohol");
-            }
-        } else {
-            System.out.println("You are too young to votte and drink alcohol");
+        int day = 3;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day");
         }
     }
 }
