@@ -202,3 +202,39 @@
 // System.out.println("Liftoff!");
 // }
 // }
+
+// === ===============Nested loops=========
+// public class Main {
+// public static void main(String[] args) {
+// for (int i = 1; i <= 2; i++) {
+// System.out.println("Outer loop iteration: " + i); // Executes 2 times
+
+// // Inner loop
+// for (int j = 1; j <= 3; j++) {
+// System.out.println(" Inner loop iteration: " + j); // Executes 6 times (2 *
+// 3)
+// }
+// }
+// }
+// }
+
+// public class Main {
+// public static void main(String[] args) {
+// for (int i = 1; i <= 3; i++) {
+// for (int j = 1; j <= 3; j++) {
+// System.out.print(i * j + " ");
+// }
+// System.out.println();
+// }
+// }
+// }
+
+// ================for-each Loop================
+// public class Main {
+// public static void main(String[] args) {
+// String[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+// for (String i : cars) {
+// System.out.println(i);
+// }
+// }
+// }
