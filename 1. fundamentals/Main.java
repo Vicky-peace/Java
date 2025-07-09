@@ -238,3 +238,110 @@
 // }
 // }
 // }
+
+// public class Main {
+// public static void main(String[] args) {
+// for (int i = 0; i <= 100; i += 10) { // program that counts to 100 by tens:
+// if (i % 2 == 0) {
+// System.out.println(i + " is even");
+// } else {
+// System.out.println(i + " is odd");
+// }
+// }
+// }
+// }
+
+// public class Main {
+// public static void main(String[] args) {
+// for (int i = 0; i <= 10; i++) {
+// if (i == 4) {
+// continue;
+// }
+// System.out.println(i);
+// }
+// }
+// }
+
+// =================Arrays=================
+// public class Main {
+// public static void main(String[] args) {
+// double[] lotteryNums = { 45, 92, 38, 33, 21 };
+// System.out.println(lotteryNums[0]);
+// }
+// }
+
+// Iterating through arrays
+// import java.util.Arrays;
+
+// public class Main {
+// public static void main(String[] args) {
+// int[] arr = new int[] { 1, 2, 3, 4, 5 };
+// for (int i = 0; i < arr.length; i++) {
+// System.out.println(arr[i]);
+// }
+// System.out.println();
+
+// for (int i = arr.length - 1; i >= 0; i--) {
+// System.out.println(arr[i]);
+// }
+// System.out.println();
+
+// for (int i = arr.length - 1; i >= 0; i = i - 2) { // Print every second
+// element in reverse order
+// System.out.println(arr[i]);
+
+// }
+// System.out.println();
+
+// for (int item : arr) {
+// System.out.println(item);
+// }
+// System.out.println();
+
+// // Java streams
+// Arrays.stream(arr).forEach(System.out::println);
+// }
+// }
+
+//This example demonstrates how to initialize an array and traverse it using a for loop to print each element.
+
+// public class Main {
+//     public static void main(String[] args) {
+
+//         // initializing the array
+//         int[] arr = { 1, 2, 3, 4, 5 };
+
+//         // the size of an array
+//         int n = arr.length;
+
+//         // traversing the array
+//         for (int i = 0; i < n; i++) {
+//             System.out.println(arr[i] + " ");
+//         }
+
+//     }
+// }
+
+public class Main {
+    public static void main(String[] args) {
+
+        // declare an Array of integer
+        int[] arr;
+
+        // Allocating a memmery of 5 integers
+        arr = new int[5];
+
+        // initialize the elements of the array
+        // first to the last fifth element
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+        arr[3] = 40;
+        arr[4] = 50;
+
+        // accessing the elements of the specified array
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Element at index " + i + ": " + arr[i]);
+        }
+    }
+}
