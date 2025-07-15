@@ -322,26 +322,36 @@
 //     }
 // }
 
-public class Main {
-    public static void main(String[] args) {
+// public class Main {
+// public static void main(String[] args) {
 
-        // declare an Array of integer
-        int[] arr;
+// // declare an Array of integer
+// int[] arr;
 
-        // Allocating a memmery of 5 integers
-        arr = new int[5];
+// // Allocating a memmery of 5 integers
+// arr = new int[5];
 
-        // initialize the elements of the array
-        // first to the last fifth element
-        arr[0] = 10;
-        arr[1] = 20;
-        arr[2] = 30;
-        arr[3] = 40;
-        arr[4] = 50;
+// // initialize the elements of the array
+// // first to the last fifth element
+// arr[0] = 10;
+// arr[1] = 20;
+// arr[2] = 30;
+// arr[3] = 40;
+// arr[4] = 50;
 
-        // accessing the elements of the specified array
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Element at index " + i + ": " + arr[i]);
-        }
+// // accessing the elements of the specified array
+// for (int i = 0; i < arr.length; i++) {
+// System.out.println("Element at index " + i + ": " + arr[i]);
+// }
+// }
+// }
+
+// create a function that finds the second smallest item an integer array
+// input:{5,8,3,2,6,1,4,7}
+
+public class SecondSmallestFinder {
+
+    public static int findSecondSmallest(int[] arr) {
+
     }
 }
