@@ -393,3 +393,22 @@ class AnonymousArrays {
     }
 
 }
+
+// passsing arrays to methods
+class PassArrayToMethod {
+    public static void main(String[] args) {
+        int[] numbers = { 0, 1 };
+        change(numbers);
+        printArray(numbers);
+    }
+
+    public static void change(int[] numbers) {
+        numbers[0] = 99;
+        numbers[1] = 100;
+    }
+
+    public static void printArray(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++)
+            System.out.print(numbers[i] + " ");
+    }
+}
