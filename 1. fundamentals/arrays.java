@@ -1,5 +1,5 @@
 // ================Data Types================
-
+import java.util.Arrays;
 // public class Main {
 // public static void main(String[] args) {
 // // Widening casting (Automatically) - converting a smaller type to a larger
@@ -410,5 +410,34 @@ class PassArrayToMethod {
     public static void printArray(int[] numbers) {
         for (int i = 0; i < numbers.length; i++)
             System.out.print(numbers[i] + " ");
+    }
+}
+
+// Arrays class
+// 1. sort(array) : sorts the whole array
+
+class SortExample {
+    public static void main(String[] args) {
+        int[] numbers = { 5, 3, 8, 1, 2 };
+        Arrays.sort(numbers);
+        System.out.println(Arrays.toString(numbers));
+    }
+}
+
+// example 2
+class SortExample2 {
+    public static void main(String[] args) {
+        char[] characters = { 'd', 'a', 'c', 'b', 'e' };
+        Arrays.sort(characters);
+        System.out.println(Arrays.toString(characters));
+    }
+}
+
+// example 3
+class SortExample3 {
+    public static void main(String[] args) {
+        int[] numbers = { 5, 4, 2, 3, 1, 0, -1 };
+        Arrays.sort(numbers, 3, 7);
+        System.out.println(Arrays.toString(numbers));
     }
 }
