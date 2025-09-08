@@ -347,12 +347,49 @@
 // }
 
 
-class Arrays {
-    public static void main(String[] args) {
-        int[] arr = { 5, 0, 8, 0, 10 };
+// class Arrays {
+// public static void main(String[] args) {
+// int[] arr = { 5, 0, 8, 0, 10 };
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i] + " ");
+// for (int i = 0; i < arr.length; i++) {
+// System.out.println(arr[i] + " ");
+// }
+// }
+// }
+
+// anonymous array
+//An anonymous array is an array that is declared and initialized without a variable name. It is typically used when you need to pass an array as an argument to a method or when you want to create an array for immediate use without the need to reference it later in the code.
+class AnonymousArrays {
+
+    // method to calculate the sum of array elements
+    public static int calculateSum(int[] arr) {
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
         }
+        return sum;
     }
+
+    // Method too print an array elements
+    public static void printArray(String[] arr) {
+        for (String element : arr) {
+            System.out.print(element + " ");
+
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        // Using anonymous array as method argument
+        int total = calculateSum(new int[] { 5, 10, 15, 20, 25 });
+        System.out.println("Sum of anonymous array: " + total);
+
+        // Another example with strings
+        printArray(new String[] { "Hello", "World", "from", "Anonymous", "Array" });
+
+        // Multi-dimensional anonymous array
+        int[][] matrix = new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        System.out.println("Element at [1][1]: " + matrix[1][1]);
+    }
+
 }
