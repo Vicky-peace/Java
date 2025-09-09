@@ -441,3 +441,35 @@ class SortExample3 {
         System.out.println(Arrays.toString(numbers));
     }
 }
+
+class SortExample4 {
+    public static void main(String[] args) {
+        String[] fruits = { "Banana", "Apple", "Orange", "Mango" };
+        Arrays.sort(fruits);
+        System.out.println(Arrays.toString(fruits));
+    }
+}
+
+class SortExample5 {
+    public static void main(String[] args) {
+        String[] strings = { "hij", "abc", "def", "ghi", "jkl", "mno" };
+        Arrays.sort(strings);
+        System.out.println(Arrays.toString(strings));
+    }
+}
+
+// Searching in arrays
+// using binarySearch() method
+// The arrays should be sorted in increasing order before using this method
+// binarySearch(array, element)
+class SearchArray {
+    public static void main(String[] args) {
+        int[] numbers = { 5, 4, 3, 2, 1, 0, -1 };
+        Arrays.sort(numbers); // -1,0,1,2,3,4,5
+        System.out.println(Arrays.binarySearch(numbers, 4));
+        System.out.println(Arrays.binarySearch(numbers, 6));
+        System.out.println(Arrays.binarySearch(numbers, -1));
+        System.out.println(Arrays.binarySearch(numbers, 0));
+        System.out.println(Arrays.binarySearch(numbers, -3));
+    }
+}
