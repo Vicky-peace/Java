@@ -509,3 +509,21 @@ class FillArray3 {
         System.out.println(Arrays.toString(strings));
     }
 }
+
+// variable length argument lists
+
+class VariableLength {
+    public static int sum(int... numbers) {
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++)
+            sum += numbers[i];
+        return sum;
+
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sum(1, 2)); // 3
+        System.out.println(sum(1, 2, 3, 4, 5)); // 15
+        System.out.println(sum()); // 0
+    }
+}
