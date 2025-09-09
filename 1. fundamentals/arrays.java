@@ -501,3 +501,11 @@ class FillArray2 {
         System.out.println(Arrays.toString(numbers1));
     }
 }
+
+class FillArray3 {
+    public static void main(String[] args) {
+        String[] strings = new String[3];
+        Arrays.fill(strings, "Hello");
+        System.out.println(Arrays.toString(strings));
+    }
+}
