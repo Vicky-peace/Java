@@ -6,6 +6,7 @@ import java.util.Arrays;
 // type
 // int myInt = 9;
 // double myDouble = myInt; // Automatic casting: int to double
+import java.util.Scanner;
 
 // System.out.println("Int: " + myInt);
 // System.out.println("Double: " + myDouble);
@@ -525,5 +526,39 @@ class VariableLength {
         System.out.println(sum(1, 2)); // 3
         System.out.println(sum(1, 2, 3, 4, 5)); // 15
         System.out.println(sum()); // 0
+    }
+}
+
+// Excercises
+// 1. Write a program that fills an array with n integers entered by the user.
+// Suppose that the user can enter at least 1 number and most 20 numbers.
+// Resolve the same excercise with points
+
+class FillUserArray {
+    public static void main(String[] args) {
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print("How many elements? (max is 20)");
+            int n = input.nextInt();
+
+            while (n > 20 || n <= 0) {
+                System.out.print("Invvalid number, try again");
+                n = input.nextInt();
+            }
+            int[] numbers = new int[n];
+            fillArrayOfIntegers(numbers);
+            printArrayofIntegers(numbers);
+        }
+    }
+
+    private static void fillArrayOfIntegers(int[] numbers) {
+        try (Scanner input = new Scanner(System.in)) {
+            for (int i = 0; i < numbers.length; i++)
+                numbers[i] = input.nextInt();
+        }
+    }
+
+    private static void printArrayofIntegers(int[] numbers) {
+        for (int i = 0; i < numbers.length; i++)
+            System.out.print(numbers[i] + " ");
     }
 }
