@@ -16,3 +16,41 @@ class MyClass {
         System.out.println(myObj.x);
     }
 }
+
+// creating multipple objects of a class
+class MyClass2 {
+    int x = 5;
+
+    public static void main(String[] args) {
+        MyClass2 myObj1 = new MyClass2();
+        MyClass2 myObj2 = new MyClass2();
+        System.out.println(myObj1.x);
+        System.out.println(myObj2.x);
+
+    }
+}
+
+// Java class Attributes
+// Class attributes are the variables that belong to a class. They are used to
+// store the state or properties of an object created from the class.
+class Car {
+    String color = "red";
+    int year = 2020;
+
+    public static void main(String[] args) {
+        Car myObj = new Car();
+        System.out.println(myObj.color);
+        System.out.println(myObj.year);
+    }
+}
+
+// Overriding attributes
+class MyClass3 {
+    int x = 10;
+
+    public static void main(String[] args) {
+        MyClass3 myObj = new MyClass3();
+        myObj.x = 25; // x attribute is now 25
+        System.out.println(myObj.x);
+    }
+}
